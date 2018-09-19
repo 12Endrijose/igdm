@@ -2,7 +2,9 @@ const Client = require('instagram-private-api').V1;
 const utils = require('./utils');
 
 exports.checkAuth = function (session) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {npm
+  
+  
     if (!session) {
       const device = utils.getDevice();
       const storage = utils.getCookieStorage();
